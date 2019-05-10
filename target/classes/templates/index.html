@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1" />
+		<link href="css/styles.css" rel="stylesheet" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<script type="text/javascript" src = "js/index.js"></script>
+		<script type="text/javascript" src = "js/jquery-3.4.0.min.js"></script>
+		<title>Weather Service</title>
+	</head>
+	<body>
+		<h4>Welcome to my Weather Site</h4>
+		<h4>Choose your city</h4>
+		<form method="get" id = "formCityId">
+			<label for="name">City</label> 
+			<select id="city" name = "city" onchange = "resetLabels();">
+				<option value = "2643743">London</option>
+				<option value = "1819729">Hong Kong</option>
+			</select> 
+			<input type = "button" value = "Get Information" onclick = "doWeatherRequest();">
+			<div>
+				<table>
+					<tr>
+						<td>Date</td><td id = "date"></td>
+					</tr>
+					<tr>
+						<td>Name</td><td id = "name"></td>
+					</tr>
+					<tr>
+						<td>Description</td><td id = "description"></td>
+					</tr>
+					<tr>
+						<td>Temperature</td><td id = "temperature"></td>
+					</tr>
+					<tr>
+						<td>Sunrise</td><td id = "sunrise"></td>
+					</tr>
+					<tr>
+						<td>Sunset</td><td id = "sunset"></td>
+					</tr>
+				</table>
+			</div>
+			<div id = "error"></div>
+		</form>
+		
+	</body>
+</html>

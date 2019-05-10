@@ -1,0 +1,6 @@
+com\app\weatherapi\client\WeatherClientTest.class
+com\app\weatherapi\controller\WheaterControllerTest.class
+com\app\weatherapi\service\WeatherServiceTest.class
+com\app\weatherapi\app\BaseTest.class
+com\app\weatherapi\utils\UtilsTest.class
+com\app\weatherapi\utils\ResponseBuilderTest.class
